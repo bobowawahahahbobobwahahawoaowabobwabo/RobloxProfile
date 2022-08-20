@@ -1,0 +1,18 @@
+// Red text = Didint work
+// redone by Pvhak#6282
+$.ajax({
+  method: "POST",
+  url: "https://avatar.roblox.com/v1/avatar/thumbnail-customization",
+  contentType: "application/json",
+  data: JSON.stringify({
+    "camera": {
+        // Ranges are inclusive.
+        "distanceScale": 4, // 0.5 to 4
+        "fieldOfViewDeg": 15, // 15 to 45
+        "xRotDeg": 10, // -20 to 20
+        "yRotDeg": 30 // -60 to 60
+    },
+    "emoteAssetId": 0, // Emote id (optional)
+    "thumbnailType": 1 // 1 = Only head ,2 = FullBody
+  })
+});
